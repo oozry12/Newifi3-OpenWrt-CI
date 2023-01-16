@@ -46,7 +46,7 @@ jobs:
           git clone https://github.com/kiddin9/openwrt-packages.git
           cd package
           mkdir openwrt-packages
-          mv ../openwrt-packages/luci-app-aliddns openwrt-packages/luci-app-aliddns
+          mv ../openwrt-packages/luci-app-ddns openwrt-packages/luci-app-ddns
           mv ../openwrt-packages/luci-app-eqos openwrt-packages/luci-app-eqos
           mv ../openwrt-packages/luci-app-wolplus openwrt-packages/luci-app-wolplus
           cd lean
@@ -100,7 +100,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-zerotier=y
 
           # Third party packages
-          CONFIG_PACKAGE_luci-app-aliddns=y
+          CONFIG_PACKAGE_ddns-scripts-cloudflare=y
           CONFIG_PACKAGE_luci-app-eqos=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
